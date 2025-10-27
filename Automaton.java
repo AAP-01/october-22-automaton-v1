@@ -1,4 +1,4 @@
-import java.util.Arrays;
+ import java.util.Arrays;
 
 /**
  * Model a 1D elementary cellular automaton.
@@ -78,5 +78,16 @@ public class Automaton
         Arrays.fill(state, 0);
         // Seed the automaton with a single 'on' cell.
         state[numberOfCells / 2] = 1;
+    }
+    
+    public void calculateNextState()
+    {
+        int[] nextState = new int[state.length];
+        
+        for(int i = 0; i < state.length; i++) {
+            int left, center, right;
+        }
+        
+        //nextState[i] = (left + center + right) % 2;
     }
 }
